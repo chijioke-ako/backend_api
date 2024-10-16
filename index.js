@@ -10,7 +10,7 @@ const pool = new pg.Pool({
   connectionString: process.env.DATABASE_URL,
   connectionTimeoutMillis: 20000, // Wait 20 seconds before timing out
   idleTimeoutMillis: 30000, // Idle clients timeout after 30 seconds
-  ssl: true,
+//   ssl: true,
 });
 
 app.get("/", (req, res) => {
